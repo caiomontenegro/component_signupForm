@@ -1,0 +1,36 @@
+@import './varables';
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: $color-Red;
+    font-family: Poppins;
+}
+
+.container {
+    display: flex;
+}
+
+.description {
+    color: white;
+}
+
+.signup_buy {
+    background-color: $color-Blue;
+    color: white;
+}
+
+.signup_form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-trial {
+    background-color: $color-Green;
+    color: white;
+}
