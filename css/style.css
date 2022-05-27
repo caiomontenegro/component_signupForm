@@ -8,30 +8,91 @@
 body {
   background: #ff7a7a;
   font-family: Poppins;
+  font-size: 16px;
 }
 
 .container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 200px auto;
+  max-width: 900px;
+  height: 500px;
 }
 
 .description {
+  flex-direction: column;
+  display: flex;
+  max-width: 410px;
   color: white;
 }
+.description__title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+}
+.description__paragraph {
+  font-size: 13px;
+  font-weight: 600;
+}
 
-.signup_buy {
+.signup {
+  display: flex;
+  width: 450px;
+  flex-direction: column;
+}
+
+.signup__buy {
+  height: 55px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.158);
   background-color: #6055a5;
   color: white;
 }
 
-.signup_form {
+.signup__container {
+  display: flex;
+  font-size: 10px;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.158);
   background-color: white;
+  padding: 35px;
+}
+
+.signup__form {
   display: flex;
   flex-direction: column;
 }
 
+.form__input {
+  height: 50px;
+  border: 1px solid rgba(165, 165, 185, 0.39);
+  border-radius: 5px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
 .buy-trial {
+  height: 50px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0px 3px #00ca00;
   background-color: #38cc8c;
+  text-transform: uppercase;
+  font-weight: 700;
   color: white;
+}
+
+.warning {
+  text-align: center;
+  color: #b9b6d3;
+}
+.warning_terms {
+  color: #ff7a7a;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
