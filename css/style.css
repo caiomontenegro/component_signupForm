@@ -5,8 +5,15 @@
   border: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   background: #ff7a7a;
+  background-image: url(../images/bg-intro-desktop.png);
   font-family: Poppins;
   font-size: 16px;
 }
@@ -15,9 +22,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 200px auto;
+  margin: auto;
   max-width: 900px;
-  height: 500px;
 }
 
 .description {
@@ -93,6 +99,12 @@ body {
 .warning_terms {
   color: #ff7a7a;
   font-weight: 700;
+}
+
+footer {
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
