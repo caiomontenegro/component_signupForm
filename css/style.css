@@ -14,20 +14,21 @@ body {
   flex-direction: column;
   background: #ff7a7a;
   background-image: url(../images/bg-intro-desktop.png);
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: auto;
+  padding: 0px 25px;
   max-width: 900px;
 }
 
 .description {
   flex-direction: column;
+  margin-right: 50px;
   display: flex;
   max-width: 410px;
   color: white;
@@ -49,8 +50,9 @@ body {
 }
 
 .signup__buy {
-  height: 55px;
+  font-family: "Poppins", sans-serif;
   width: 100%;
+  padding: 25px;
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.158);
@@ -59,7 +61,7 @@ body {
 }
 
 .signup__container {
-  display: flex;
+  font-family: "Poppins", sans-serif;
   font-size: 10px;
   flex-direction: column;
   border-radius: 10px;
@@ -79,6 +81,11 @@ body {
   border-radius: 5px;
   padding-left: 15px;
   margin-bottom: 15px;
+  font-weight: 600;
+}
+.form__input:focus {
+  outline: 0;
+  border: 2px solid rgba(40, 40, 187, 0.39);
 }
 
 .buy-trial {
@@ -105,6 +112,47 @@ footer {
   padding: 0;
   text-align: center;
   font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .description {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .description__title {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .description__paragraph {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  .signup {
+    width: 100%;
+  }
+  .signup__buy {
+    font-size: 15px;
+    font-weight: 10px;
+    padding: 15px 70px;
+    line-height: 25px;
+  }
+  .signup__container {
+    padding: 20px;
+  }
+
+  .form__input {
+    font-weight: 700;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
