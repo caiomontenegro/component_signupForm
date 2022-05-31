@@ -61,6 +61,7 @@ body {
     box-shadow: 0px 7px 3px rgba(0, 0, 0, 0.158);
     background-color: $color-Blue;
     color: white;
+    cursor: pointer;
 }
 
 .signup__container {
@@ -92,6 +93,10 @@ body {
     }
 }
 
+.js-block {
+    border: 2px solid $color-Red
+}
+
 .buy-trial {
     height: 50px;
     border-radius: 5px;
@@ -101,6 +106,7 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     color: white;
+    cursor: pointer;
 }
 
 .warning {
