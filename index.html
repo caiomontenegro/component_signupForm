@@ -28,10 +28,15 @@
 
         <div class="signup__container">
           <form action="" class="signup__form">
-            <input class="form__input js-input js-fName" type="text" placeholder="First Name"></input>
+            <input class="form__input js-input js-fName" type="text" placeholder="First Name">
+            </input>
+            <em class="empty-message js-empty-message" >First name cannot be empty</em>
             <input class="form__input js-input js-lName" type="text" placeholder="Last Name"></input>
+            <em class="empty-message js-empty-message" >Last Name cannot be empty</em>
             <input class="form__input js-input js-email" type="email" placeholder="Email Address"></input>
+            <em class="empty-message js-empty-message" >Looks like this is not an e-mail</em>
             <input class="form__input js-input js-password" type="password" placeholder="password"></input>
+            <em class="empty-message js-empty-message" >passowrd cannot be empty</em>
             <input type="submit" class="buy-trial js-login" value="Claim your free trial">
           </form>
           <div class="warning">By clicking the button, you are agreeing to our <span class="warning_terms">Terms and Services</span></div>
@@ -42,8 +47,10 @@
   
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="__blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/caiomontenegro" target="__blank">Caio Montenegro</a>.
+      <em>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="__blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/caiomontenegro" target="__blank">Caio Montenegro</a>.
+      </em>
     </p>
   </footer>
   <script src="scripts/script.js">

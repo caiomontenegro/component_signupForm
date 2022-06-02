@@ -80,11 +80,14 @@ body {
 }
 
 .form__input {
+
+    font-size: 15px;
     height: 50px;
     border: 1px solid rgba(165, 165, 185, 0.39);
     border-radius: 5px;
     padding-left: 15px;
-    margin-bottom: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
     font-weight: 600;
 
     &:focus {
@@ -94,12 +97,30 @@ body {
 }
 
 .js-block {
-    border: 2px solid $color-Red
+    color: $color-Red;
+    border: 2px solid $color-Red;
+    margin-top: 15px;
+    background-image: url(../images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+}
+
+.empty-message {
+    color: white;
+    margin-top: 5px;
+    text-align: right;
+    font-weight: 600;
+}
+
+.js-block-message {
+    color: $color-Red;
 }
 
 .buy-trial {
     height: 50px;
     border-radius: 5px;
+    margin-top: 15px;
     margin-bottom: 15px;
     box-shadow: 0px 3px rgb(0, 202, 0);
     background-color: $color-Green;
