@@ -9,16 +9,17 @@ let voids = document.querySelectorAll('.js-empty-message')
 
 button.addEventListener('click', checkData)
 
+
 for(let i = 0; i in inputs; i++) {
     inputs[i].addEventListener('blur', function() {
         clear(inputs[i], voids[i])
     })
 }
 
+
 function clear(inputs, voids) {
     inputs.classList.remove('js-block')
     voids.classList.remove('js-block-message')
-    console.log('teste')
 }
 
 
@@ -44,13 +45,38 @@ function checkData(event) {
             inputs[i].classList.remove('js-block')
             voids[i].classList.remove('js-block-message')
         }
-        checkEmail(inputsValues[2])
+    }
+    if(checkName(fName, lName) === false) {
+        event.preventDefault()
+    }
+    checkEmail(inputsValues[2])
+    checkPassword(inputsValues[3])
+}
+
+
+function checkName(fName, lName) {
+    if(fName.length === 1) {
+        inputs[0].classList.add('js-block')
+        return false
+    } else if (lName.length === 1) {
+        inputs[1].classList.add('js-block')
+        return false
+    } else {
+        return true
     }
 }
 
+
+function checkPassword(password) {
+    if(password.length < 6) {
+        inputs[3].classList.add('js-block')
+        return false
+    } return true
+}
+
+
 function checkEmail(email) {
     if (email.includes('@')) {
-        console.log('tem @')
         if (email.endsWith('.com') || email.endsWith('.com.br')) {
             inputs[2].classList.remove('js-block')
             voids[2].classList.remove('js-block-message')
@@ -63,5 +89,3 @@ function checkEmail(email) {
         voids[2].classList.add('js-block-message')
     }
 }
-
-
